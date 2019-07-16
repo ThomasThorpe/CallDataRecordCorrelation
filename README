@@ -1,0 +1,30 @@
+===AreaCodes.py===
+Contains a dictionary of all valid UK area codes.
+
+===CLIDChecker.py===
+Contains a function to check if a number is valid or not.
+
+===ExampleGenerator.py===
+If ran creates a vast amount of data. (I left this on overnight and generated ~11GiB when I woke up).
+- If you do decide to run this, I recommend running in a new folder as all the small CDRs are generated quickly.
+I recommend importing and directly calling "CreatePairCDRsSpooferSpoofer" or "CreatePairCDRsSpooferNonSpoofer" with parameters of your choice.
+
+===ExampleGeneratorTest.py===
+Unit tests for data generation. Can run from terminal using python3.
+Only tests for gap 15 and size 10 so the tests can finish quickly. Has worked up to sizes 10,000 and multiple gaps.
+
+===TheCorrelator.py===
+Run from terminal and pass the filenames of two standardised CDRs. Can use the test data provided for quick confirmation.
+>python3 1A.csv 1B.csv
+
+===TheCorrelatorTest.py===
+Generate some standardised CDRs with the filenames: "1A.csv" and "1B.csv" and so on. Currently hardcoded to test the two pairs of CDRs but can be extended. The test data provided are tiny in size so the tests can finish quickly
+
+===TheParser.py===
+Run from the terminal and pass either a single filename for EE, O2 or Vodafone. Pass two filenames for H3G which need to be parsed and merged.
+
+===*.csv===
+Small test data to use with the programs.
+
+===ProjectReport.pdf===
+The report.
